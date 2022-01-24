@@ -322,9 +322,11 @@
             justify-items: center;
             align-content: center;
             align-items: stretch;
+            margin-left: 50%;
+            width: 100%;
         }
     }
-    /* Pc */
+    /* Desktop */
     
     @media(min-width: 768px) {
         #liveToast,

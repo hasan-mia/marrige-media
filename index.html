@@ -31,7 +31,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
+                        <ul class="navbar-nav ms-auto text-uppercase">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
@@ -42,7 +42,7 @@
                                 <a class="nav-link">Contact us</a>
                             </li>
                             <li class="nav-item">
-                                <button type="button" class="btn btn-outline-primary" id="liveToastBtn">Subscribe Toast</button>
+                                <button type="button" class="btn btn-outline-primary text-uppercase" id="liveToastBtn">Subscribe Toast</button>
                                 <!-- <a class="btn btn-outline-primary" href="#">Subscribe</a> -->
                             </li>
                         </ul>
@@ -381,8 +381,11 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12">
                         <div class="footer-left">
+                            <div class="footer-title fw-bold text-white-50">
+                                <h4>About</h4>
+                            </div>
                             <div class="footer-logo">
                                 <img src="img/icons/logo.png" alt="footer-logo">
                                 <span class="fw-bold text-white">Marrige Media</span>
@@ -400,8 +403,23 @@
                         </div>
                     </div>
                     <!-- end col -->
-                    <div class="col-lg-6 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="footer-middle">
+                            <div class="footer-title fw-bold text-white-50">
+                                <h4>Address</h4>
+                            </div>
+                            <address class="text-white">
+                                <p>3520 Masonic Hill Road</p>
+                                <p> Golden Valley; Minnesota; 55426; US</p>
+                                <p>Emal: contact@idea.com</p>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
                         <div class="footer-right">
+                            <div class="footer-title fw-bold text-white-50">
+                                <h4>Get On</h4>
+                            </div>
                             <div class="footer-social">
                                 <ul class="social-bottom">
                                     <li> <i class="fab fa-facebook-square fa-2x"></i> </li>
@@ -462,23 +480,9 @@
         |      All Javascript       |
         =========================-->
         <script src="js/bootstrap.bundle.min.js"></script>
-        <script>
-            var myCarousel = document.querySelector('#myCarousel')
-            var carousel = new bootstrap.Carousel(myCarousel, {
-                interval: 2000,
-                wrap: true
-            });
-
-            var toastTrigger = document.getElementById('liveToastBtn')
-            var toastLiveExample = document.getElementById('liveToast')
-            if (toastTrigger) {
-                toastTrigger.addEventListener('click', function() {
-                    var toast = new bootstrap.Toast(toastLiveExample)
-
-                    toast.show()
-                })
-            }
-        </script>
+        <script src="js/custom.js"></script>
     </body>
+
+</html>
 
 </html>

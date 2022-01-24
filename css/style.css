@@ -149,6 +149,11 @@ footer {
     padding: 3rem 0 0 0;
 }
 
+address {
+    font-size: 14px;
+    line-height: .8;
+}
+
 .footer-left {
     display: grid;
     justify-content: start;
@@ -237,7 +242,23 @@ footer .fas {
         justify-content: start;
         justify-items: start;
     }
-    .footer-left {
+    .title {
+        padding-bottom: 5px;
+    }
+    .footer-left,
+    .footer-right .footer-title,
+    .footer-middle {
         padding-left: 30px;
+    }
+    #liveToast {
+        position: relative;
+        right: 48%;
+    }
+}
+
+@media(min-width: 768px) {
+    #liveToast {
+        position: relative;
+        right: 40%;
     }
 }

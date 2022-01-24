@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Marrige Media | Boostrap 5.1.3</title>
         <link rel="icon" href="img/icons/icon.png" sizes="50x50">
-        <!-- boostrap 5.3.1 -->
+        <!-- boostrap 5.1.3 -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- fontawesome 5.10 -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -42,7 +42,7 @@
                                 <a class="nav-link">Contact us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Subscribe</a>
+                                <a class="btn btn-outline-success" href="#">Subscribe</a>
                             </li>
                         </ul>
                     </div>
@@ -51,11 +51,323 @@
         </header>
         <!-- end header -->
 
-
-        <!--========================
-        |       Main Part         |
-        =========================-->
         <main>
+            <!--========================
+            |       Slider Part         |
+            =========================-->
+            <section class="py-5">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/banner-1-min.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>The perfect venue for your next event</h5>
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
+                                <button type="button" class="btn btn-light">Book Now</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/banner-2-min.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                                <button type="button" class="btn btn-light">Book Now</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/banner-3-min.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                                <button type="button" class="btn btn-light">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <!-- end slider -->
+
+            <!--========================
+            |       About us Part        |
+            =========================-->
+            <section class="py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="about-img">
+                                <img src="img/wedding-min.png" alt="">
+                            </div>
+                        </div>
+                        <!-- end column -->
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="about-content">
+                                <h3 class="fw-bold">Every moment is Precious </h3>
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                <a href="#" class="btn btn-primary"> Explore our album <i class="fas fa-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                        <!-- end column -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end about part -->
+
+            <!--========================
+            |     Package Part        |
+            =========================-->
+            <section class="package py-5">
+                <div class="container">
+                    <div class="title text-center">
+                        <h1>Our package</h1>
+                    </div>
+                    <!-- end title -->
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="price">$800</h2>
+                                    <h5 class="card-title">Wedding plus</h5>
+                                    <p class="card-text">For most weddings with premium plans</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"> <i class="fal fa-check-circle"></i> Full space access</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> Dedicated team</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> Buffet food</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> premium Decoration</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> pay as plan</li>
+                                </ul>
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-light rounded-pill text-info">Choose plan</a>
+                                </div>
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- nd col -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="price">$800</h2>
+                                    <h5 class="card-title">Wedding plus</h5>
+                                    <p class="card-text">For most weddings with premium plans</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"> <i class="fal fa-check-circle"></i> Full space access</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> Dedicated team</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> Buffet food</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> premium Decoration</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> pay as plan</li>
+                                </ul>
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-light rounded-pill text-info">Choose plan</a>
+                                </div>
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- nd col -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="price">$800</h2>
+                                    <h5 class="card-title">Wedding plus</h5>
+                                    <p class="card-text">For most weddings with premium plans</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"> <i class="fal fa-check-circle"></i> Full space access</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> Dedicated team</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> Buffet food</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> premium Decoration</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> pay as plan</li>
+                                </ul>
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-light rounded-pill text-info">Choose plan</a>
+                                </div>
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- nd col -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="price">$800</h2>
+                                    <h5 class="card-title">Wedding plus</h5>
+                                    <p class="card-text">For most weddings with premium plans</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"> <i class="fal fa-check-circle"></i> Full space access</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> Dedicated team</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> Buffet food</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> premium Decoration</li>
+                                    <li class="list-group-item"><i class="fal fa-check-circle"></i> pay as plan</li>
+                                </ul>
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-light rounded-pill text-info">Choose plan</a>
+                                </div>
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- nd col -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end package -->
+
+            <!--========================
+            |       Client Part        |
+            =========================-->
+            <section class="client py-5">
+                <div class="container">
+                    <div class="title text-center">
+                        <h1>Happy Clients says</h1>
+                    </div>
+                    <!-- end title -->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <p class="card-text">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                                </div>
+                                <img src="img/person-1.png" class="card-img-bottom" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wedding plus</h5>
+                                    <p class="card-text">Jone Drake</p>
+                                </div>
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <p class="card-text">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                                </div>
+                                <img src="img/person-1.png" class="card-img-bottom" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wedding plus</h5>
+                                    <p class="card-text">Jone Drake</p>
+                                </div>
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <p class="card-text">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                                </div>
+                                <img src="img/person-1.png" class="card-img-bottom" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wedding plus</h5>
+                                    <p class="card-text">Jone Drake</p>
+                                </div>
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end client -->
+
+            <!--========================
+            |       FAQ Part        |
+            =========================-->
+            <section class="faq py-5">
+                <div class="container">
+                    <div class="title text-center mb-lg-5">
+                        <h1>Frequently Asked Questions/h1>
+                    </div>
+                    <!-- end title -->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            What’s the difference between event design and event planning? 
+                                    </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            How early do we need to start planning an event
+                                    </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+                                            the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            What is your refund and cancellation policy?
+                                    </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+                                            the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            How do you keep budgets on track?
+                                    </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+                                            the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="faq-img">
+                                <img src="img/couple-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- enc cold -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end client -->
+
 
         </main>
         <!-- end main -->
@@ -64,8 +376,58 @@
         |       Footer Part        |
         =========================-->
         <footer>
-            <div class="copywright">
-                <p>&copy; 2021-202 All Right Reserved by MarrigeMedia.Com</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="footer-left">
+                            <div class="footer-logo">
+                                <img src="img/icons/logo.png" alt="footer-logo">
+                            </div>
+
+                            <div class="footer-nav">
+                                <ul class="footer-menu">
+                                    <li> <a href="single.html">Home</a> </li>
+                                    <li> <a href="single.html">About</a> </li>
+                                    <li> <a href="single.html">Privacy Policy</a> </li>
+                                    <li> <a href="single.html">DMCA</a> </li>
+                                </ul>
+                            </div>
+                            <!-- end footer nav -->
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="footer-right">
+                            <div class="footer-social">
+                                <ul class="social-bottom">
+                                    <li> <i class="fab fa-facebook-square fa-2x"></i> </li>
+                                    <li> <i class="fab fa-twitter-square fa-2x"></i> </li>
+                                    <li> <i class="fab fa-instagram-square fa-2x"></i> </li>
+                                    <li> <i class="fab fa-youtube-square fa-2x"></i> </li>
+                                    <li> <i class="fab fa-linkedin-in fa-2x"></i> </li>
+                                    <li> <i class="fas fa-rss-square fa-2x"></i> </li>
+                                </ul>
+                            </div>
+                            <!-- end footer social -->
+                            <div class="app">
+                                <ul>
+                                    <li>
+                                        <a href="single.html"> <img src="img/icons/playapp.png" alt="android app"> </a>
+                                    </li>
+                                    <li>
+                                        <a href="single.html"> <img src="img/icons/iapp.png" alt="istore app"> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end app -->
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+                <div class="copywright text-center">
+                    <p>&copy; 2021-202 All Right Reserved by MarrigeMedia.Com</p>
+                </div>
             </div>
         </footer>
         <!-- end footer -->
@@ -76,6 +438,13 @@
         <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
         <script src="js/bootstrap.bundle.min.js"></script>
         <!-- <script src="js/custom.js"></script> -->
+        <script>
+            var myCarousel = document.querySelector('#myCarousel')
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 2000,
+                wrap: true
+            })
+        </script>
     </body>
 
 </html>

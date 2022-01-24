@@ -29,3 +29,101 @@ li {
 img {
     width: 100%;
 }
+
+
+/* ========Nabar======== */
+
+
+/* ========Slider======== */
+
+.carousel-caption h5 {
+    font-size: 48px;
+}
+
+
+/* ========Package======== */
+
+.package .card {
+    border: 0;
+}
+
+.package .list-group-item {
+    border-bottom: 0;
+}
+
+
+/* ========Faw======== */
+
+
+/* ========Footer======== */
+
+.footer-left {
+    display: grid;
+    justify-content: start;
+    justify-items: start;
+}
+
+.footer-right {
+    display: grid;
+    justify-content: end;
+    justify-items: end;
+}
+
+.footer-logo img {
+    width: 10%;
+}
+
+.footer-nav {
+    float: left;
+    padding: 5px 0;
+}
+
+.app {
+    float: right;
+}
+
+.app ul li {
+    list-style: none;
+    text-decoration: none;
+    float: left;
+}
+
+.app ul li a img {
+    width: 110px;
+    padding: 2px 2px;
+}
+
+.footer-nav ul {
+    padding-left: 0;
+}
+
+.footer-nav ul li {
+    list-style: none;
+    float: left;
+    padding: 0 5px 0 0;
+    border: 1px solid rgba(197, 197, 197, 0.315);
+}
+
+.footer-social {
+    float: right;
+    padding-top: 15px;
+}
+
+.social-bottom li {
+    list-style: none;
+    float: left;
+    padding: 0 1px;
+    font-size: 12px;
+}
+
+.social-bottom li i {
+    background: #000;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+.social-bottom>li>.fa-facebook-square {
+    color: #4267B2;
+    padding: 15% 22%;
+}

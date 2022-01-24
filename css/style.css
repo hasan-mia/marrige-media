@@ -54,7 +54,7 @@ img {
 }
 
 .logo {
-    color: #E02C6D;
+    color: #3F87F5;
     animation-name: logo;
     animation-duration: 5s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -63,19 +63,19 @@ img {
 
 @keyframes logo {
     0% {
-        color: #0000;
+        color: #0d1d35;
     }
     25% {
-        color: rgb(63, 63, 63);
+        color: rgb(28, 94, 194)
     }
     50% {
-        color: rgb(128, 127, 127);
+        color: #3F87F5;
     }
     75% {
-        color: rgb(63, 63, 63);
+        color: #15386d;
     }
     100% {
-        color: #0000;
+        color: #000000;
     }
 }
 
@@ -112,6 +112,10 @@ img {
     background: #EDEBF8;
 }
 
+.package .fa-check-circle {
+    color: #074f82;
+}
+
 .card-active {
     background: #3F87F5;
     padding: 1.2rem;
@@ -140,6 +144,25 @@ img {
 
 
 /* ========Faq======== */
+
+
+/* ========Register Form======== */
+
+.form-left {
+    background: #3786bd;
+    color: #fff;
+}
+
+.form-right h2 {
+    color: #3786BD;
+}
+
+.form-right .btn-primary {
+    color: #fff;
+    background-color: #3786bd;
+    border-color: #3786bd;
+    padding: 15px 0;
+}
 
 
 /* ========Footer======== */
@@ -253,6 +276,10 @@ footer .fas {
     #liveToast {
         position: relative;
         right: 48%;
+    }
+    .registration .w-50 {
+        width: 100%!important;
+        padding: 5px;
     }
 }
 

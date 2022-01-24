@@ -30,8 +30,20 @@ img {
     width: 100%;
 }
 
+.btn {
+    padding: 5px 2rem;
+}
+
+.title {
+    padding-bottom: 2rem;
+}
+
 
 /* ========Nabar======== */
+
+.navbar-brand {
+    width: 50px;
+}
 
 
 /* ========Slider======== */
@@ -60,7 +72,6 @@ img {
 
 .package .card-body .rounded-pill {
     background: #FDF4FA;
-    padding: 5px 2rem;
 }
 
 .package .fa-check-circle:before {
@@ -69,10 +80,10 @@ img {
 
 .card-active {
     background: #3F87F5;
-    width: 100%;
     padding: 1.2rem;
     bottom: 2.5rem;
     color: #fff;
+    box-shadow: 2px 6px 15px #3f87f5!important;
 }
 
 .card-active .list-group-item {
@@ -86,10 +97,23 @@ img {
 }
 
 
-/* ========Faw======== */
+/* ========Clent======== */
+
+.client .card {
+    box-shadow: 2px 3px 19px #c7c5c5;
+    border-radius: 8px;
+}
+
+
+/* ========Faq======== */
 
 
 /* ========Footer======== */
+
+footer {
+    background: #0e0e0e;
+    padding: 3rem 0 0 0;
+}
 
 .footer-left {
     display: grid;
@@ -138,6 +162,11 @@ img {
     border: 1px solid rgba(197, 197, 197, 0.315);
 }
 
+.footer-nav ul li a {
+    color: #FDF4FA;
+    font-size: 12px;
+}
+
 .footer-social {
     float: right;
     padding-top: 15px;
@@ -151,13 +180,30 @@ img {
 }
 
 .social-bottom li i {
-    background: #000;
+    background: #FDF4FA;
     border-radius: 50%;
     height: 35px;
     width: 35px;
 }
 
-.social-bottom>li>.fa-facebook-square {
-    color: #4267B2;
+footer .fab,
+footer .fas {
     padding: 15% 22%;
+}
+
+.copywright p {
+    font-size: 12px;
+}
+
+
+/* Media Query */
+
+@media(max-width: 767px) {
+    .footer-right {
+        justify-content: start;
+        justify-items: start;
+    }
+    .footer-left {
+        padding-left: 30px;
+    }
 }

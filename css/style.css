@@ -253,7 +253,8 @@
     .copywright p {
         font-size: 12px;
     }
-    /* Media Query */
+    /* ========Media Query=========== */
+    /* Mobile */
     
     @media(max-width: 767px) {
         .slider {
@@ -293,6 +294,37 @@
             text-align: left;
         }
     }
+    /* Tablet */
+    
+    @media(min-width: 768px) and (max-width:1024px) {
+        .registration .w-50 {
+            width: 100%!important;
+            padding: 5px;
+        }
+        .about-content,
+        .card-body,
+        .form-right h2,
+        .form-left h2 {
+            text-align: center;
+        }
+        .card-active {
+            bottom: 0.1rem;
+        }
+        .card-active .card-body .card-text:last-child {
+            text-align: left;
+        }
+        .footer-middle {
+            float: right;
+        }
+        .footer-right {
+            display: grid;
+            justify-content: space-between;
+            justify-items: center;
+            align-content: center;
+            align-items: stretch;
+        }
+    }
+    /* Pc */
     
     @media(min-width: 768px) {
         #liveToast,

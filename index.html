@@ -24,7 +24,7 @@
                 <div class="container">
                     <a class="navbar-brand" href="#">
                         <img src="img/icons/logo.png" alt="">
-                        <span class="fw-bold">Marrige Media</span>
+                        <span class="fw-bold logo">Marrige Media</span>
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,8 @@
                                 <a class="nav-link">Contact us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-outline-primary" href="#">Subscribe</a>
+                                <button type="button" class="btn btn-outline-primary" id="liveToastBtn">Subscribe Toast</button>
+                                <!-- <a class="btn btn-outline-primary" href="#">Subscribe</a> -->
                             </li>
                         </ul>
                     </div>
@@ -50,7 +51,6 @@
             </nav>
         </header>
         <!-- end header -->
-
         <main>
             <!--========================
             |       Slider Part         |
@@ -138,7 +138,7 @@
                     <!-- end title -->
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-12">
-                            <div class="card position-relative">
+                            <div class="card position-relative scale">
                                 <div class="card-body">
                                     <h1 class="price py-1">$300</h1>
                                     <h4 class="card-title py-1">Business fair </h4>
@@ -159,7 +159,7 @@
                         </div>
                         <!-- nd col -->
                         <div class="col-lg-3 col-md-6 col-12">
-                            <div class="card position-relative">
+                            <div class="card position-relative scale">
                                 <div class="card-body">
                                     <h1 class="price py-1">$500</h1>
                                     <h4 class="card-title py-1">wedding basic </h4>
@@ -180,7 +180,7 @@
                         </div>
                         <!-- nd col -->
                         <div class="col-lg-3 col-md-6 col-12">
-                            <div class="card position-relative card-active">
+                            <div class="card position-relative scale card-active">
                                 <div class="card-body">
                                     <h1 class="price py-1">$800</h1>
                                     <h4 class="card-title py-1">Wedding plus</h4>
@@ -197,14 +197,14 @@
                                     <a href="#" class="btn btn-light rounded-pill text-info">Choose plan</a>
                                 </div>
                                 <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">
-                                    Hot
+                                    Best Selling
                                 </span>
                             </div>
                             <!-- end card -->
                         </div>
                         <!-- nd col -->
                         <div class="col-lg-3 col-md-6 col-12">
-                            <div class="card position-relative">
+                            <div class="card position-relative scale">
                                 <div class="card-body">
                                     <h1 class="price py-1">$1200</h1>
                                     <h4 class="card-title py-1">Corporate event</h4>
@@ -379,7 +379,7 @@
         |       Footer Part        |
         =========================-->
         <footer>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-12">
                         <div class="footer-left">
@@ -437,6 +437,28 @@
         <!-- end footer -->
 
         <!--========================
+        |      Toast Message      |
+        =========================-->
+        <div class="position-fixed top-50 start-50">
+            <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"> -->
+            <div id="liveToast" role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
+                <div class="toast-header">
+                    <img src="img/icons/logo.png" class="rounded w-25" alt="logo">
+                    <strong class="me-auto">MarrigeMedia</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter Email" aria-describedby="subscribe">
+                            <button class="btn btn-warning" type="button" id="subscribe">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+        <!--========================
         |      All Javascript       |
         =========================-->
         <script src="js/bootstrap.bundle.min.js"></script>
@@ -445,7 +467,17 @@
             var carousel = new bootstrap.Carousel(myCarousel, {
                 interval: 2000,
                 wrap: true
-            })
+            });
+
+            var toastTrigger = document.getElementById('liveToastBtn')
+            var toastLiveExample = document.getElementById('liveToast')
+            if (toastTrigger) {
+                toastTrigger.addEventListener('click', function() {
+                    var toast = new bootstrap.Toast(toastLiveExample)
+
+                    toast.show()
+                })
+            }
         </script>
     </body>
 

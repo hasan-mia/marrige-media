@@ -38,11 +38,45 @@ img {
     padding-bottom: 2rem;
 }
 
+.scale {
+    transition: transform 1s;
+}
+
+.scale:hover {
+    transform: scale(1.02)
+}
+
 
 /* ========Nabar======== */
 
 .navbar-brand {
     width: 50px;
+}
+
+.logo {
+    color: #E02C6D;
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+    0% {
+        color: #0000;
+    }
+    25% {
+        color: rgb(63, 63, 63);
+    }
+    50% {
+        color: rgb(128, 127, 127);
+    }
+    75% {
+        color: rgb(63, 63, 63);
+    }
+    100% {
+        color: #0000;
+    }
 }
 
 

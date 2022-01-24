@@ -12,13 +12,22 @@ var carousel = new bootstrap.Carousel(myCarousel, {
     wrap: true
 })
 
-//Boostrap Toast
-var toastTrigger = document.getElementById('liveToastBtn')
-var toastLiveExample = document.getElementById('liveToast')
-if (toastTrigger) {
-    toastTrigger.addEventListener('click', function() {
-        var toast = new bootstrap.Toast(toastLiveExample)
+//Subscribe Toast
+var subscribeBtn = document.getElementById('liveToastBtn')
+var subscribeToast = document.getElementById('liveToast')
+if (subscribeBtn) {
+    subscribeBtn.addEventListener('click', function() {
+        var toast = new bootstrap.Toast(subscribeToast)
+        toast.show()
+    })
+}
 
+//Book Now Toast
+var bookingBtn = document.getElementById('booknowBtn')
+var bookingToast = document.getElementById('booknow')
+if (bookingBtn) {
+    bookingBtn.addEventListener('click', function() {
+        var toast = new bootstrap.Toast(bookingToast)
         toast.show()
     })
 }

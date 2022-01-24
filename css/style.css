@@ -271,7 +271,8 @@
         .footer-middle {
             padding-left: 30px;
         }
-        #liveToast {
+        #liveToast,
+        #booknow {
             position: relative;
             right: 48%;
         }
@@ -294,7 +295,8 @@
     }
     
     @media(min-width: 768px) {
-        #liveToast {
+        #liveToast,
+        #booknow {
             position: relative;
             right: 40%;
         }
